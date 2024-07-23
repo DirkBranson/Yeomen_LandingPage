@@ -1,0 +1,269 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <title>Send Email</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            font-family: KanitLight, Arial, sans-serif;
+        }
+
+
+        body{
+            scroll-behavior: smooth;
+        }
+
+        @font-face {
+font-family: KanitLight;
+src: url('{% static "Kanit-Light.ttf" %}') format('truetype');
+
+}
+
+        .TitleBanner{
+            background-color: white;
+            display: flex;
+            background-image: url('{% static "Atrides_yeoman2.png" %}');
+            height: 155px;
+          background-size: 30vw; /* Cover the entire container */
+          background-position: center; /* Center the background image */
+          background-repeat: no-repeat; /* Prevent repeating the image */
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        h1{
+            font-size: xx-large;
+        }
+
+        .hero {
+            background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('{% static "pexels-pixabay-462023.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            margin-right: auto;
+        }
+
+        
+        .nav-links {
+            list-style-type: none;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+        .hero-content {
+            text-align: center;
+            color: #fff;
+        }
+
+
+
+        .features {
+            padding: 40px 0;
+        }
+
+        .feature-item {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-item img {
+            width: 80px;
+            margin-right: 20px;
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        .feature-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-description {
+            color: #777;
+            line-height: 1.5;
+        }
+
+        .Form{
+            font-size: x-large;
+            display: grid;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow: auto;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .Formscontainer{
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .about {
+            padding: 80px 0;
+            background-color: darkslategrey;
+        }
+
+        .OnGreen{
+            background-color: darkslategrey;
+            height: 20vh;
+            
+        }
+
+        .OnWhite{
+            background-color: white;
+            height: 20vh;
+        }
+
+        .GreenText{
+            color: darkslategrey;
+            font-size: x-large;
+        }
+
+        .WhiteText{
+            color: white;
+            font-size: large;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+
+<header class="hero">
+        <div class="container">
+            <nav>
+                <h1 class="logo" font-size="xx-large">yeomen</h1>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h2>Today's Farms, Tomorrow's Future</h2>
+                <p>The Gateway to Agriculture 4.0</p>
+                <a href="#signup" class="btn">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+</head>
+<body>
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="feature-item">
+                <img src="icon1.png" alt="Feature 1">
+                <div class="feature-content">
+                    <h3 class="feature-title">Feature 1</h3>
+                    <p class="feature-description">Description of feature 1 goes here. It can span multiple lines.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <img src="icon2.png" alt="Feature 2">
+                <div class="feature-content">
+                    <h3 class="feature-title">Feature 2</h3>
+                    <p class="feature-description">Description of feature 2 goes here. It can span multiple lines.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <img src="icon3.png" alt="Feature 3">
+                <div class="feature-content">
+                    <h3 class="feature-title">Feature 3</h3>
+                    <p class="feature-description">Description of feature 3 goes here. It can span multiple lines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about WhiteText">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a team of passionate innovators...</p>
+        </div>
+    </section>
+
+<div class = "Formscontainer" id="signup">
+</div>    
+    <h1>Survey Form</h1>
+    <form action="/survey/" method="post" class = "Form">
+        {% csrf_token %}
+        <label for="q1">Name:</label>
+        <input type="text" id="q1" name="q1" />
+        <label for="q2">Enterprise:</label>
+        <input type="text" id="q2" name="q2" />
+        <label for="q3">Would you be interested in giving Feedback?</Details>:</label>
+        <input type="text" id="q3" name="q3" />
+        <label for="q4">If so, what are your contact details?</Details>:</label>
+        <input type="text" id="q4" name="q4" />
+        <label for="q5">Thoughts on the yeoman product?:</label>
+        <textarea id="q5" name="q5" rows="4" cols="50"></textarea>
+        <input type="submit" value="Send Email">
+    </form>
+    {{alert|safe}}
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollBtn = document.querySelector('.scroll-btn');
+    
+    scrollBtn.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default behavior of the link
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+    </script>
+</body>
+</html>
