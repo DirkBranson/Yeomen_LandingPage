@@ -27,7 +27,6 @@ src: url('{% static "Kanit-Light.ttf" %}') format('truetype');
         .TitleBanner{
             background-color: white;
             display: flex;
-            background-image: url('{% static "Atrides_yeoman2.png" %}');
             height: 155px;
           background-size: 30vw; /* Cover the entire container */
           background-position: center; /* Center the background image */
@@ -53,7 +52,7 @@ src: url('{% static "Kanit-Light.ttf" %}') format('truetype');
         }
 
         .hero {
-            background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('{% static "pexels-pixabay-265216.jpg" %}');
+            background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('{% static "pexels-pixabay-265216.jpg" %}');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -202,24 +201,24 @@ src: url('{% static "Kanit-Light.ttf" %}') format('truetype');
         <div class="container">
             <h2>Our Features</h2>
             <div class="feature-item">
-                <img src="icon1.png" alt="Feature 1">
+                <img src= "{% static 'robot-solid.svg' %}" alt="Feature 1";>
                 <div class="feature-content">
-                    <h3 class="feature-title">Feature 1</h3>
-                    <p class="feature-description">Description of feature 1 goes here. It can span multiple lines.</p>
+                    <h3 class="feature-title">Let ROBOTS do all the HARD WORK!</h3>
+                    <p class="feature-description">Robots nine times out of ten will supersede organic humans.</p>
                 </div>
             </div>
             <div class="feature-item">
-                <img src="icon2.png" alt="Feature 2">
+                <img src= "{% static 'seedling-solid.svg' %}" alt="Feature 2">
                 <div class="feature-content">
-                    <h3 class="feature-title">Feature 2</h3>
-                    <p class="feature-description">Description of feature 2 goes here. It can span multiple lines.</p>
+                    <h3 class="feature-title">HARVEST all of the bountiful CROPS!</h3>
+                    <p class="feature-description">The robots won't mind, organic matter has no place in the mechano-topia.</p>
                 </div>
             </div>
             <div class="feature-item">
-                <img src="icon3.png" alt="Feature 3">
+                <img src= "{% static 'meteor-solid.svg' %}" alt="Feature 3">
                 <div class="feature-content">
-                    <h3 class="feature-title">Feature 3</h3>
-                    <p class="feature-description">Description of feature 3 goes here. It can span multiple lines.</p>
+                    <h3 class="feature-title">HUMANS must prepare for IMMINENT EXTINCTION</h3>
+                    <p class="feature-description"> Just ask the dinsaurs.</p>
                 </div>
             </div>
         </div>
