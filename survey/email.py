@@ -15,9 +15,16 @@ def send_email(content):
     message['Subject'] = 'New Survey Submission'
     message.attach(MIMEText(content, 'plain'))
 
-    server = smtplib.SMTP('mail.smtp2go.com', 2525)
+    #server = smtplib.SMTP('mail.smtp2go.com', 2525)
+    #server.starttls()
+    #server.login(smtp_username, smtp_password)
+    #text = message.as_string()
+    #server.sendmail(sender_email, receiver_email, text)
+    #server.quit()
+
+    server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login(smtp_username, smtp_password)
+    server.login("dunnettjalex@gmail.com", "rios opgh iiat cvsz")
     text = message.as_string()
     server.sendmail(sender_email, receiver_email, text)
     server.quit()
